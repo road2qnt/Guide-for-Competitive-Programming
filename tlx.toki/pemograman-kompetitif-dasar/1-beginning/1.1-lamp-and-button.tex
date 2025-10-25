@@ -1,0 +1,66 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\begin{document}
+
+\section*{Example Problem 1.1: Lamp and Buttons}
+
+\textbf{Time limit:} 1 second \\
+\textbf{Memory limit:} 64 MB
+
+\bigskip
+
+There are $N$ buttons numbered from $1$ to $N$ and a lamp that is initially turned off.  
+When the $i$-th button is pressed, the state of the lamp (off $\leftrightarrow$ on) will toggle 
+\textit{if and only if} $N$ is divisible by $i$.  
+If each button is pressed exactly once, what will be the final state of the lamp?
+
+\subsection*{Input Format}
+A single line containing one integer $N$.
+
+\subsection*{Output Format}
+A single line containing:
+\begin{itemize}
+    \item \texttt{lamp off}, if the lamp ends up turned off.
+    \item \texttt{lamp on}, if the lamp ends up turned on.
+\end{itemize}
+
+\subsection*{Sample Input 1}
+\begin{verbatim}
+5
+\end{verbatim}
+
+\subsection*{Sample Output 1}
+\begin{verbatim}
+lamp off
+\end{verbatim}
+
+\subsection*{Sample Input 2}
+\begin{verbatim}
+4
+\end{verbatim}
+
+\subsection*{Sample Output 2}
+\begin{verbatim}
+lamp on
+\end{verbatim}
+
+\subsection*{Explanation}
+In the first example, the buttons that affect the lamp are buttons 1 and 5.  
+Pressing button 1 turns the lamp on, and pressing button 5 turns it back off.
+
+In the second example, the buttons that affect the lamp are buttons 1, 2, and 4.  
+Pressing button 1 turns the lamp on,  
+pressing button 2 turns it off again,  
+and pressing button 4 turns it back on.
+
+\subsection*{Constraints}
+\[
+1 \leq N \leq 10^{18}
+\]
+
+\end{document}
